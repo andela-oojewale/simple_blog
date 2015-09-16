@@ -4,13 +4,7 @@ ruby '2.1.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
-group :development do
-gem 'sqlite3'
-end
-group :production do
-gem 'rails_12factor'
-gem 'pg'
-end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -57,3 +51,11 @@ gem 'foundation-rails',  '~> 5.5.2.1'
 # Gmail OAuth
 gem "omniauth-google-oauth2"
 gem 'omniauth'
+
+group :development, :test do
+  gem 'sqlite3', '1.3.10'
+end
+group :production do
+  gem 'pg',             '0.17.1'
+  gem 'rails_12factor', '0.0.2'
+end
