@@ -52,6 +52,9 @@ gem 'foundation-rails',  '~> 5.5.2.1'
 gem "omniauth-google-oauth2"
 gem 'omniauth'
 
+# FB OAuth
+gem 'omniauth-facebook'
+
 group :development, :test do
   gem 'sqlite3', '1.3.10'
 end
