@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
-
+ruby '2.1.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -39,5 +39,26 @@ gem 'pry'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
-#From ruby girls
+# My verifyEmail gem
+gem 'verifyEmail'
+
+# From ruby girls
 gem 'devise'
+
+# foundation
+gem 'foundation-rails',  '~> 5.5.2.1'
+
+# Gmail OAuth
+gem "omniauth-google-oauth2"
+gem 'omniauth'
+
+# FB OAuth
+gem 'omniauth-facebook'
+
+group :development, :test do
+  gem 'sqlite3', '1.3.10'
+end
+group :production do
+  gem 'pg',             '0.17.1'
+  gem 'rails_12factor', '0.0.2'
+end

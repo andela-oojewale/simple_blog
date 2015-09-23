@@ -12,4 +12,15 @@
  *
  *= require_tree .
  *= require_self
+ *= require foundation_and_overrides
+
  */
+ body
+ {
+    background: url(../images/MKEMRSG8DI.jpg) !important;
+ }
+
+ li.hover
+ {
+    color: red !important;
+ }
